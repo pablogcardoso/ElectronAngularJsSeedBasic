@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>angular1.6Seed with Protractor</title>
+	<style>
+		.menu{display:block; position:absolute: top:0px; background-color:#2c94c5; width:100%; height:20px;}
+		.menu a{ padding-left:10px; color:#fff; font-weight:800; text-decoration:none;}
+	</style>
+</head>
+<body ng-app="AppBasic" style=" margin:0px;">
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+   
+	<!--main module-->
+    <script src="app/main/main.module.js"></script>
+    <script src="app/main/config.route.js"></script>
+    <script src="app/main/main.controller.js"></script>
+	<!--main module-->
+    <script src="app/two/two.module.js"></script>
+    <script src="app/two/config.route.js"></script>
+    <script src="app/two/two.controller.js"></script>
+	
+    <script src="app/app.js"></script>
+	<div class="menu">
+		<a ui-sref="main">(Go to module: Main)</a>
+		<a ui-sref="two">(Go to module: Two)</a>
+	</div>
+	<div ui-view></div>
+	<script></script>
+</body>
+
+</html>
