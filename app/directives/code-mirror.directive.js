@@ -13,6 +13,9 @@
             link: function ($scope, iElm, iAttrs, controller) {
                 $scope.surname = "";
             },
+            compile:function(){
+                
+            },
             templateUrl: 'code-mirror.html'
         };
     }]);

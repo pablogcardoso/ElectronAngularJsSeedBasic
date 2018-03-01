@@ -6,6 +6,7 @@
 		.menu{display:block; position:absolute: top:0px; background-color:#2c94c5; width:100%; height:20px;}
 		.menu a{ padding-left:10px; color:#fff; font-weight:800; text-decoration:none;}
 	</style>
+	<link rel="stylesheet" href="lib/codemirror.css">
 </head>
 <body ng-app="AppBasic" style=" margin:0px;">
 	<script src="node_modules/angular/angular.js"></script>
@@ -22,13 +23,19 @@
     <script src="app/two/config.route.js"></script>
     <script src="app/two/two.controller.js"></script>
 	
-    <script src="app/app.js"></script>
+	<script src="app/app.js"></script>
+	<!-- CodeMirror-->
+	<script src="lib/codemirror.js"></script>
+	<script src="mode/javascript/javascript.js"></script>
+
 	<div class="menu">
 		<a ui-sref="main">(Go to module: Main)</a>
 		<a ui-sref="two">(Go to module: Two)</a>
 	</div>
 	<div ui-view></div>
-	<script></script>
+	<script>
+	
+	</script>
 </body>
 
 </html>
