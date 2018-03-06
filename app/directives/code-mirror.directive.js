@@ -1,3 +1,11 @@
+/**
+* This directive connect codemirror with the scope.
+* Also initialize codeMirror object
+*
+*       ATENTION: IS NOT IMPLEMENTED YET
+*
+* @todo: Compile function, link function, html
+*/
 (function () {
     'use strict';
     angular.module('AppBasic').directive('codeMirror', [function () {
