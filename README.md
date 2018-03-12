@@ -1,6 +1,6 @@
 # ElectronAngularJsSeedBasic
 Electron with AngularJs Basic Project + Material Design
-
+Electron with CodeMirror Basic Project.
 ## Specs
 -This project use UI-Route for make routing with multiple views.
 -Use Angular 1.6.x or leter
@@ -27,12 +27,4 @@ For run your project need init the node server:
 ```
 This project run in port 9000, open browser and go to: http://localhost:9000/
 
-## Production
-For run your project in production, is recomendable compress and concat your css and javascript.
-For that use Gulp.
-```bash
-> gulp build
-
-```
-This line concat and compress all in /dest directory.
 
