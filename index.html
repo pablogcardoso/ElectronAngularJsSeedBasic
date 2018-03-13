@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>angular1.6 Seed with Elcectron</title>
+	<title>angular1.6 Seed with Electron</title>
 	<style>
 		.menu {
 			display: block;
@@ -10,10 +10,12 @@
 			left: 0px;
 			background-color: #343538;
 			/* #1a1b23;*/
-			width: 60px;
+			width: 120px;
 			height: 100%;
 		}
-
+		body {
+			background-color: #959da5;
+		 }
 		.menu a {
 			padding-left: 20px;
 			margin-bottom: 20px;
@@ -50,22 +52,34 @@
 			padding: 10px;
 		}
 	</style>
-	<link rel="stylesheet" href="static/css/font-awesome.css">
+	<link rel="stylesheet" href="/static/css/font-awesome.css">
+	<link rel="stylesheet" href="/static/css/app.css">
 </head>
 <body ng-app="AppBasic" style=" margin:0px;">
-
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+   
+	<!--main module-->
+    <script src="app/main/main.module.js"></script>
+    <script src="app/main/config.route.js"></script>
+    <script src="app/main/main.controller.js"></script>
+	<!--main module-->
+    <script src="app/two/two.module.js"></script>
+    <script src="app/two/config.route.js"></script>
+    <script src="app/two/two.controller.js"></script>
+	
+	<script src="app/app.js"></script>
+	
 	<div class="menu">
-		<div>
-			<a ui-sref="main">
-				<i class="icon-collapse icon-large"></i>
-			</a>
-		</div>
+		<!--<a ui-sref="main">(Go to module: Main)</a>
+		<a ui-sref="two">(Go to module: Two)</a>-->
 	</div>
-	<div class="content">
-		<div id="file"></div>
-		<div id="footer"></div>
-	</div>
-	<ng-view></ng-view>
+	<div ui-view></div>
+	<script>
+	
+	</script>
 </body>
 
 </html>

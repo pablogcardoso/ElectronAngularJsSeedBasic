@@ -15,7 +15,7 @@
 
         var mm = this;
         $scope.title = "(Main) Module it running";
-        //document.write(process.versions.node)
+        
     };
 
 })();
